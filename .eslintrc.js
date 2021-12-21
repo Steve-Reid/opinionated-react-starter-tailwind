@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'plugin:import/recommended',
     'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
@@ -39,6 +40,7 @@ module.exports = {
         args: 'none',
       },
     ],
+    '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/semi': ['off'],
     '@typescript-eslint/no-unused-vars': [
       'warn',
