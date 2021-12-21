@@ -9,6 +9,7 @@ module.exports = {
     'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
+    'plugin:storybook/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'prettier',
@@ -96,4 +97,21 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/function-component-definition': 'off',
   },
+  overrides: [
+    {
+      // or whatever matches stories specified in .storybook/main.js
+      files: [
+        './src/**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)',
+        './src/stories/*.@(ts|tsx|js|jsx|mjs|cjs)',
+      ],
+      rules: {
+        // example of overriding a rule
+        'storybook/hierarchy-separator': 'error',
+        // example of disabling a rule
+        'storybook/default-exports': 'off',
+        'react/require-default-props': 'off',
+        '@typescript-eslint/ban-types': 'off',
+      },
+    },
+  ],
 };

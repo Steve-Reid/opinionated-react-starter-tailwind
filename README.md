@@ -21,22 +21,17 @@ An opinionated React starter project
 
 Inside the project directory run using `npm` or `yarn`:
 
-- `build` - builds the app for production to the `build` folder.
 - `start` - Runs the built app in development mode.
-- `lint` - ESlint configured for Next. Use `.eslintrc.json` to setup & `.eslintignore` to ignore files.
+- `build` - builds the app for production to the `build` folder.
+- `test` - unit testing with Jest & react-testing-library.
+- `eject` -
+- `check-lint` - ESlint configured for Next. Use `.eslintrc.json` to setup & `.eslintignore` to ignore files.
 - `check-types` - runs TypeScript's [`tsc` CLI command](https://www.typescriptlang.org/docs/handbook/compiler-options.html) and pretty prints any warnings/errors.
 - `check-format` - asks Prettier to check all of our files (excluding the ones in .prettierignore) for formatting issues.
 - `format` - will format your code prettier using opinionated settings inside `.prettierrc` file. Use `.prettierignore` to ignore files.
 - `storybook` - To run your Storybook. Open [http://localhost:6006/](http://localhost:6006/) to view it in the browser.
 - `build-storybook` - build Storybook - create static Storybook project.
-- `clean-storybook` - clean static Storybook folder.
-- `test` - unit testing with Jest & react-testing-library.
-- `test:watch` - watch our jest tests.
-- `test:ci` - unit testing with Jest & react-testing-library using the ci flag.
-- `cypress:open` - create a cypress E2E directory with some examples.
-- `cypress:run` - run the E2E tests and record video.
-- `cypress:clean` - delete `cypress` folder.
-- `prepare` - Install husky.
+
 
 ### Run
 
