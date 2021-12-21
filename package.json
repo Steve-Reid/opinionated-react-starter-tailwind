@@ -6,9 +6,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
     "eject": "react-scripts eject",
-    "check-lint": "eslint . --ext ts --ext tsx --ext js",
-    "check-format": "prettier --check ."
+    "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "eslintConfig": {
     "extends": [

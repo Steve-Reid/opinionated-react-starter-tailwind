@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# CRA Opinionated Starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An opinionated React starter project
 
-## Available Scripts
 
-In the project directory, you can run:
+## Tech Stack
 
-### `yarn start`
+- [React App](https://reactjs.org/docs/getting-started.html) project - bootstrapped with [`create-react-app v5`](https://create-react-app.dev/docs/getting-started).
+- React & React DOM v17
+- Type Checker - TypeScript v4.5.2
+- Page Routing - React Router v6
+- Storybook v6.4.7
+- Lint - ESlint v8, AirBnB & Eslint-config-next
+- Format - Prettier
+- Unit Testing - Jest + react-testing-library
+- Mocking - Mock Service Worker
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inside the project directory run using `npm` or `yarn`:
 
-### `yarn build`
+- `build` - builds the app for production to the `build` folder.
+- `start` - Runs the built app in development mode.
+- `lint` - ESlint configured for Next. Use `.eslintrc.json` to setup & `.eslintignore` to ignore files.
+- `check-types` - runs TypeScript's [`tsc` CLI command](https://www.typescriptlang.org/docs/handbook/compiler-options.html) and pretty prints any warnings/errors.
+- `check-format` - asks Prettier to check all of our files (excluding the ones in .prettierignore) for formatting issues.
+- `format` - will format your code prettier using opinionated settings inside `.prettierrc` file. Use `.prettierignore` to ignore files.
+- `storybook` - To run your Storybook. Open [http://localhost:6006/](http://localhost:6006/) to view it in the browser.
+- `build-storybook` - build Storybook - create static Storybook project.
+- `clean-storybook` - clean static Storybook folder.
+- `test` - unit testing with Jest & react-testing-library.
+- `test:watch` - watch our jest tests.
+- `test:ci` - unit testing with Jest & react-testing-library using the ci flag.
+- `cypress:open` - create a cypress E2E directory with some examples.
+- `cypress:run` - run the E2E tests and record video.
+- `cypress:clean` - delete `cypress` folder.
+- `prepare` - Install husky.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Run
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Entry point `pages/index.tsx`.
 
-### `yarn eject`
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The `pages/api` directory mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Eslint configurations
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Lint set according to Airbnb and NextJS style guides.
+## Format configurations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Prettier](https://prettier.io/) is set using my opinionated [rules](https://prettier.io/docs/en/configuration.html) inside config file `.prettierrc`
