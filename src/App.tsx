@@ -18,10 +18,10 @@ function App() {
         </a>
         <div>
           <Link to="/">
-            <p>Home</p>
+            <p className="text-green-500">Home</p>
           </Link>
           <Link to="about">
-            <p>About</p>
+            <p className="text-purple-500">About</p>
           </Link>
         </div>
         <Routes>

@@ -1,6 +1,6 @@
-# CRA Opinionated Starter
+# CRA Opinionated Starter with TailwindCSS
 
-An opinionated React starter project
+An opinionated React starter project using TailwindCSS for styling
 
 
 ## Tech Stack
@@ -8,12 +8,13 @@ An opinionated React starter project
 - [React App](https://reactjs.org/docs/getting-started.html) project - bootstrapped with [`create-react-app v5`](https://create-react-app.dev/docs/getting-started).
 - React & React DOM v17
 - Type Checker - TypeScript v4.5.2
-- Page Routing - React Router v6
-- Storybook v6.4.7
-- Lint - ESlint v8, AirBnB & Eslint-config-next
-- Format - Prettier
-- Unit Testing - Jest + react-testing-library
-- Mocking - Mock Service Worker
+- CSS Styling - [TailwindCSS](https://tailwindcss.com/)
+- Page Routing - [React Router v6](https://reactrouter.com/docs/en/v6)
+- UI Development - [Storybook v6.4.7](https://storybook.js.org/docs/react/get-started/introduction)
+- Linting - ESlint v8, AirBnB & Eslint-config-next
+- Formatting - [Prettier](https://prettier.io/docs/en/index.html)
+- Unit Testing - [Jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- Test Mocking - [Mock Service Worker](https://mswjs.io/)
 
 
 
@@ -41,14 +42,11 @@ yarn dev
 npm run dev
 ```
 
-Entry point `pages/index.tsx`.
+Entry point `src/index.tsx`.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
-
-The `pages/api` directory mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 ## Eslint configurations
 
-Lint set according to Airbnb and NextJS style guides.
+Lint initially set according to Airbnb's style guide.
 ## Format configurations
 
 [Prettier](https://prettier.io/) is set using my opinionated [rules](https://prettier.io/docs/en/configuration.html) inside config file `.prettierrc`
