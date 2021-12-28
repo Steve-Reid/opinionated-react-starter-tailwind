@@ -44,6 +44,9 @@ npm run dev
 
 Entry point `src/index.tsx`.
 
+## Tailwind configuration
+
+Note that `create-react-app` as of version 5 now includes [PostCSS plugin support](https://github.com/facebook/create-react-app/pull/11717) for `tailwindcss`, therefore, Create React App Configuration Override is no longer required to install tailwind.
 ## Eslint configurations
 
 Lint initially set according to Airbnb's style guide.
